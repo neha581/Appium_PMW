@@ -7,7 +7,6 @@ import io.appium.java_client.MobileElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
    public class ImageUpload {
 	static AppiumDriver<MobileElement> driver;
-
 	public static void main(String[] args) {
 		
 		try {
