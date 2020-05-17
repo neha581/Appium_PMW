@@ -5,7 +5,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-
 public class bankaccount {
 
 	public static void main(String[] args) {
