@@ -100,7 +100,6 @@ public class Login_Logout {
 	profile.click();
 	System.out.println("go to my profile");
 	Thread.sleep(12000);
-	
 	MobileElement logout = (MobileElement) driver.findElementByAccessibilityId("profile_5");
 	Thread.sleep(12000);
 	logout.click();
