@@ -94,7 +94,7 @@ public class Login_Logout {
 	submitotp.click();
 	System.out.println("otp submitted successfully.");
 	Thread.sleep(12000);
-	
+
 	MobileElement profile = (MobileElement) driver.findElementByAccessibilityId("homenav_3");
 	Thread.sleep(12000);
 	profile.click();
