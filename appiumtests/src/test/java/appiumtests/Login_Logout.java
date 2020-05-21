@@ -40,21 +40,38 @@ public class Login_Logout {
 	driver = new AppiumDriver<MobileElement>(url, cap);
 	System.out.println("Application started...");
 	Thread .sleep(12000);
-
-	MobileElement language = (MobileElement) driver.findElementByAccessibilityId("intro_4");
+	
+	MobileElement choose_lang  = (MobileElement) driver.findElementByAccessibilityId("choose_language");
 	Thread .sleep(12000);
-	System.out.println("Telugu");
+	choose_lang.click();
+	System.out.println("choose_lang");
+	Thread .sleep(12000);
+	MobileElement language = (MobileElement) driver.findElementByAccessibilityId("lang_3");
+	Thread .sleep(12000);
 	language.click();
-
-	MobileElement hindi = (MobileElement) driver.findElementByAccessibilityId("intro_2");
+	System.out.println("Telugu");
+	Thread .sleep(12000);
+	MobileElement choose_lang1  = (MobileElement) driver.findElementByAccessibilityId("choose_language");
+	Thread .sleep(12000);
+	choose_lang1.click();
+	System.out.println("choose_lang");
+	Thread .sleep(12000);
+	MobileElement hindi = (MobileElement) driver.findElementByAccessibilityId("lang_2");
 	Thread .sleep(12000);
 	hindi.click();
 	System.out.println("language selected.");
-
-	MobileElement English = (MobileElement) driver.findElementByAccessibilityId("intro_1");
 	Thread .sleep(12000);
-	System.out.println("select english as app language.");
+	MobileElement choose_lang2  = (MobileElement) driver.findElementByAccessibilityId("choose_language");
+	Thread .sleep(12000);
+	choose_lang2.click();
+	System.out.println("choose_lang");
+	Thread .sleep(12000);
+	
+	MobileElement English = (MobileElement) driver.findElementByAccessibilityId("lang_1");
+	Thread .sleep(12000);
 	English.click();
+	System.out.println("select english as app language.");
+	Thread .sleep(12000);
 	
 	MobileElement verify_number = (MobileElement) driver.findElementByAccessibilityId("intro_3");
 	Thread.sleep(12000);
