@@ -17,7 +17,6 @@ import io.appium.java_client.MobileElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 @Test
 public class LoginLogout {
-	
 	static AppiumDriver<MobileElement> driver;
 	
 	 private static Logger Log = Logger.getLogger(Login_Logout.class.getName());
@@ -33,7 +32,6 @@ public class LoginLogout {
 		}
 		// TODO Auto-generated method stub
 }
-	
 	public static void openPickmywork() throws Exception
 	{
 	DesiredCapabilities cap = new DesiredCapabilities();
