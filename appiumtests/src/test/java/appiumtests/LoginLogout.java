@@ -2,20 +2,23 @@ package appiumtests;
 import java.net.URL;
 //import java.util.concurrent.TimeUnit;
 
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
+
 //import org.testng.Assert;
 //import org.testng.annotations.*;
 //import org.openqa.selenium.WebDriver;
 //import org.openqa.selenium.firefox.FirefoxDriver;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+
 //import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
-@Test
+
 public class LoginLogout {
 	static AppiumDriver<MobileElement> driver;
 	
@@ -32,6 +35,7 @@ public class LoginLogout {
 		}
 		// TODO Auto-generated method stub
 }
+	@Test
 	public static void openPickmywork() throws Exception
 	{
 	DesiredCapabilities cap = new DesiredCapabilities();
@@ -53,7 +57,9 @@ public class LoginLogout {
 	Log.info("New driver instantiated");
 	System.out.println("Application started...");
 	Thread .sleep(12000);
-	
+	}
+	@Test
+	public void TC() throws InterruptedException{
 	
 	MobileElement choose_lang  = (MobileElement) driver.findElementByAccessibilityId("choose_language");
 	Thread .sleep(1200);
@@ -120,6 +126,6 @@ public class LoginLogout {
 	System.out.println("logout");
 	}
 
-	 
+	
 }
 

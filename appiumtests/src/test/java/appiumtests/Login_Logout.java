@@ -5,8 +5,8 @@ import java.net.URL;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterMethod;
+//import org.testng.annotations.BeforeMethod;
+//import org.testng.annotations.AfterMethod;
 //import org.testng.Assert;
 //import org.testng.annotations.*;
 //import org.openqa.selenium.WebDriver;
@@ -15,7 +15,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 //import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
-@Test
+
 public class Login_Logout {
 	static AppiumDriver<MobileElement> driver;
 	 private static Logger Log = Logger.getLogger(Login_Logout.class.getName());
@@ -31,7 +31,7 @@ public class Login_Logout {
 		}
 		// TODO Auto-generated method stub
 }
-	@BeforeMethod
+	@Test
 	
 	public static void openPickmywork() throws Exception
 	{
@@ -120,9 +120,6 @@ public class Login_Logout {
 	logout.click();
 	System.out.println("logout");
 	}
-	 @AfterMethod
-	 public void afterMethod() {
-	 
-	 }
+	
 	 
 }

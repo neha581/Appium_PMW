@@ -5,11 +5,15 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+import org.testng.annotations.Test;
 
 public class Skills_and_Jobs {
 	static AppiumDriver<MobileElement> driver;
-
+	private static Logger Log = Logger.getLogger(Login_Logout.class.getName());
 	public static void main(String[] args) {
+		DOMConfigurator.configure("log4j.xml");
 		// TODO Auto-generated method stub
 		try {
 			openPickmywork();
@@ -20,6 +24,7 @@ public class Skills_and_Jobs {
 			e.printStackTrace();
 		}
 	}
+	@Test
 	public static void openPickmywork() throws Exception
 	{
 	DesiredCapabilities cap = new DesiredCapabilities();
@@ -38,6 +43,7 @@ public class Skills_and_Jobs {
 	URL url = new URL("http://127.0.0.1:4723/wd/hub");
 	
 	driver = new AppiumDriver<MobileElement>(url, cap);
+	Log.info("New driver instantiated");
 	System.out.println("Application started...");
     Thread .sleep(12000);
     MobileElement English = (MobileElement) driver.findElementByAccessibilityId("intro_1");
