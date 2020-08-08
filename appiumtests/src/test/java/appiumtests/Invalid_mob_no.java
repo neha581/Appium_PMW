@@ -67,7 +67,7 @@ public class Invalid_mob_no {
 		Thread.sleep(12000);
 		MobileElement mobileNumber = (MobileElement)driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.EditText");
 		Thread.sleep(12000);   
-		mobileNumber.sendKeys("797689043");
+		mobileNumber.sendKeys("07976890438");
 		System.out.println("number entered successfully.");
 		Thread.sleep(1200);
 		MobileElement submit = (MobileElement) driver.findElementByAccessibilityId("login_1");

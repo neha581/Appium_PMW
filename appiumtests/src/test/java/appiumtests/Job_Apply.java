@@ -32,7 +32,7 @@ public class Job_Apply {
 	cap.setCapability("newCommandTimeout", 100000);
 	cap.setCapability("avdLaunchTimeout",90000);
 	cap.setCapability("avdReadyTimeout",60000);
-	cap.setCapability("deviceName","AOSP on IA Emulator");
+	cap.setCapability("deviceName","Android SDK build for x86");
 	cap.setCapability("udid","emulator-5554");
 	cap.setCapability("platformName","Android");
 	cap.setCapability("platformVersion","9.0.0");

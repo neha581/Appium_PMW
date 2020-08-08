@@ -39,7 +39,7 @@ public class Login_Logout {
 	cap.setCapability("newCommandTimeout", 100000);
 	cap.setCapability("avdLaunchTimeout",90000);
 	cap.setCapability("avdReadyTimeout",60000);
-	cap.setCapability("deviceName","AOSP on IA Emulator");
+	cap.setCapability("deviceName","Android SDK build for x86");
 	cap.setCapability("udid","emulator-5554");
 	cap.setCapability("platformName","Android");
 	cap.setCapability("platformVersion","9.0.0");
@@ -96,7 +96,7 @@ public class Login_Logout {
 	
 	MobileElement mobileNumber = (MobileElement)driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.EditText");
 	Thread.sleep(1200);   
-	mobileNumber.sendKeys("7976890438");
+	mobileNumber.sendKeys("8290660528");
 	System.out.println("number entered successfully.");
 	Thread.sleep(1200);
 	MobileElement submit = (MobileElement) driver.findElementByAccessibilityId("login_1");

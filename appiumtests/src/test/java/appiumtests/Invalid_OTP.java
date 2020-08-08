@@ -68,7 +68,7 @@ System.out.println("button:verify mobile number.");
 Thread.sleep(12000);
 MobileElement mobileNumber = (MobileElement)driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.EditText");
 Thread.sleep(12000);   
-mobileNumber.sendKeys("797689043");
+mobileNumber.sendKeys("8290660528");
 System.out.println("number entered successfully.");
 Thread.sleep(1200);
 MobileElement submit = (MobileElement) driver.findElementByAccessibilityId("login_1");
@@ -79,6 +79,7 @@ Thread.sleep(12000);
 MobileElement submitotp = (MobileElement) driver.findElementByAccessibilityId("login_8");
 Thread.sleep(12000);
 submitotp.click();
+
 System.out.println("otp is wrong.");
 Thread.sleep(12000);
 }

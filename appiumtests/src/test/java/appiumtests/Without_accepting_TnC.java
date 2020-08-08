@@ -65,19 +65,14 @@ public class Without_accepting_TnC {
 		verify_number.click();
 		System.out.println("button:verify mobile number.");
 		Thread.sleep(12000);
-		
-		MobileElement mobileNumber = (MobileElement)driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.EditText");
-		Thread.sleep(12000);   
-		mobileNumber.sendKeys("7976890438");
-		System.out.println("number entered successfully.");
-		Thread.sleep(1200);
-		MobileElement submit = (MobileElement) driver.findElementByAccessibilityId("login_1");
+		MobileElement TnC = (MobileElement) driver.findElementById(("236b4d01-327c-434c-a5c1-27fc48c566eb"));
+		TnC.click();
+		System.out.println("accept privacy policy.");
+		Thread.sleep(12000);
+		MobileElement submit = (MobileElement) driver.findElementByAccessibilityId(("login_1"));
 		submit.click();
 		System.out.println("number submitted successfully.");
 		Thread.sleep(12000);
-		MobileElement TnC = (MobileElement) driver.findElementByAccessibilityId("login_7");
-		TnC.click();
-		System.out.println("plz accept privacy policy.");
-		Thread.sleep(12000);
+		System.out.println("accept privacy policy.");
 	}
 }
