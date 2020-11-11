@@ -55,7 +55,7 @@ Thread .sleep(12000);
 choose_lang.click();
 System.out.println("choose_lang");
 Thread .sleep(1200);
-MobileElement language = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]");
+MobileElement language = (MobileElement) driver.findElementByAccessibilityId("lang_1");
 Thread .sleep(1200);
 language.click();
 System.out.println("select english as app language.");
@@ -66,7 +66,7 @@ Thread.sleep(12000);
 verify_number.click();
 System.out.println("button:verify mobile number.");
 Thread.sleep(12000);
-MobileElement mobileNumber = (MobileElement)driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.EditText");
+MobileElement mobileNumber = (MobileElement)driver.findElementByAccessibilityId("mobile_field");
 Thread.sleep(12000);   
 mobileNumber.sendKeys("8290660528");
 System.out.println("number entered successfully.");
@@ -79,8 +79,20 @@ Thread.sleep(12000);
 MobileElement submitotp = (MobileElement) driver.findElementByAccessibilityId("login_8");
 Thread.sleep(12000);
 submitotp.click();
-
 System.out.println("otp is wrong.");
+Thread.sleep(12000);
+
+MobileElement submitotp1 = (MobileElement) driver.findElementByAccessibilityId("login_8");
+Thread.sleep(12000);
+submitotp1.click();
+System.out.println("otp field is blank.");
+Thread.sleep(12000);
+
+MobileElement submitotp2 = (MobileElement) driver.findElementByAccessibilityId("login_8");
+Thread.sleep(12000);
+submitotp2.click();
+
+System.out.println("use spaces instead of otp.");
 Thread.sleep(12000);
 }
 }

@@ -47,11 +47,7 @@ public class UserProfile {
 	Log.info("New driver instantiated");
 	System.out.println("Application started...");
     Thread .sleep(12000);
-    MobileElement English = (MobileElement) driver.findElementByAccessibilityId("intro_1");
-	Thread .sleep(12000);
-	System.out.println("select english as app language.");
-	English.click();
-
+  
 	MobileElement verify_number = (MobileElement) driver.findElementByAccessibilityId("intro_3");
 	Thread.sleep(12000);
 	verify_number.click();

@@ -54,7 +54,7 @@ public class Without_accepting_TnC {
 		choose_lang.click();
 		System.out.println("choose_lang");
 		Thread .sleep(1200);
-		MobileElement language = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]");
+		MobileElement language = (MobileElement) driver.findElementByAccessibilityId("lang_1");
 		Thread .sleep(1200);
 		language.click();
 		System.out.println("select english as app language.");
@@ -65,14 +65,13 @@ public class Without_accepting_TnC {
 		verify_number.click();
 		System.out.println("button:verify mobile number.");
 		Thread.sleep(12000);
-		MobileElement TnC = (MobileElement) driver.findElementById(("236b4d01-327c-434c-a5c1-27fc48c566eb"));
+		MobileElement TnC = (MobileElement) driver.findElementByAccessibilityId(("login_4"));
 		TnC.click();
 		System.out.println("accept privacy policy.");
-		Thread.sleep(12000);
-		MobileElement submit = (MobileElement) driver.findElementByAccessibilityId(("login_1"));
+		Thread.sleep(1200);
+		MobileElement submit = (MobileElement) driver.findElementByAccessibilityId(("login_9"));
 		submit.click();
-		System.out.println("number submitted successfully.");
-		Thread.sleep(12000);
-		System.out.println("accept privacy policy.");
+		System.out.println("submit button");
+		System.out.println("accept privacy policy to login.");
 	}
 }

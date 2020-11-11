@@ -46,11 +46,6 @@ public class Skills_and_Jobs {
 	Log.info("New driver instantiated");
 	System.out.println("Application started...");
     Thread .sleep(12000);
-    MobileElement English = (MobileElement) driver.findElementByAccessibilityId("intro_1");
-	Thread .sleep(12000);
-	System.out.println("select english as app language.");
-	English.click();
-
 	MobileElement verify_number = (MobileElement) driver.findElementByAccessibilityId("intro_3");
 	Thread.sleep(12000);
 	verify_number.click();
@@ -153,27 +148,27 @@ public class Skills_and_Jobs {
     System.out.println("Job_prefrence_selected");
     Thread.sleep(12000);
     
-    MobileElement company_name = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[1]");
-    Thread.sleep(120);
-    company_name.sendKeys("Testcompany");
-    MobileElement job_profile = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[2]");
-    Thread.sleep(120);
-    job_profile.sendKeys("sales");
-    MobileElement duration = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[3]");
-    Thread.sleep(120);
-    duration.sendKeys("3");
-    System.out.println("added previous experience");
-    Thread.sleep(12000);
+    //MobileElement company_name = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[1]");
+    //Thread.sleep(120);
+    //company_name.sendKeys("Testcompany");
+    //MobileElement job_profile = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[2]");
+    //Thread.sleep(120);
+    //job_profile.sendKeys("sales");
+    //MobileElement duration = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[3]");
+    //Thread.sleep(120);
+    //duration.sendKeys("3");
+    //System.out.println("added previous experience");
+    //Thread.sleep(12000);
     
     MobileElement Save = (MobileElement) driver.findElementByAccessibilityId("nav_2");
     Thread.sleep(12000);
     Save.click();
     System.out.println("Save info");
     Thread.sleep(12000);
-    MobileElement Back = (MobileElement) driver.findElementByAccessibilityId("nav_1");
-    Thread.sleep(12000);
-    Back.click();
-    System.out.println("go back to profile");
+    //MobileElement Back = (MobileElement) driver.findElementByAccessibilityId("nav_1");
+    //Thread.sleep(12000);
+    //Back.click();
+    //System.out.println("go back to profile");
     System.out.println("The End.");
     
     

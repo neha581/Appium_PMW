@@ -53,27 +53,45 @@ public class Invalid_mob_no {
 		Thread .sleep(12000);
 		choose_lang.click();
 		System.out.println("choose_lang");
-		Thread .sleep(1200);
-		MobileElement language = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]");
+		Thread .sleep(12000);
+		MobileElement language = (MobileElement) driver.findElementByAccessibilityId("lang_1");
 		Thread .sleep(1200);
 		language.click();
 		System.out.println("select english as app language.");
-		Thread .sleep(1200);
+		Thread .sleep(12000);
 		
 		MobileElement verify_number = (MobileElement) driver.findElementByAccessibilityId("intro_3");
 		Thread.sleep(12000);
 		verify_number.click();
 		System.out.println("button:verify mobile number.");
 		Thread.sleep(12000);
-		MobileElement mobileNumber = (MobileElement)driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.EditText");
+		MobileElement mobileNumber = (MobileElement)driver.findElementByAccessibilityId("mobile_field");
 		Thread.sleep(12000);   
-		mobileNumber.sendKeys("07976890438");
+		mobileNumber.sendKeys("079768938");
 		System.out.println("number entered successfully.");
 		Thread.sleep(1200);
 		MobileElement submit = (MobileElement) driver.findElementByAccessibilityId("login_1");
 		submit.click();
 		System.out.println("invalid mobile number.");
 		Thread.sleep(12000);
+		MobileElement mobileNo = (MobileElement)driver.findElementByAccessibilityId("mobile_field");
+		Thread.sleep(12000);   
+		mobileNo.sendKeys("       ");
+		System.out.println("spaces instead of number.");
+		Thread.sleep(1200);
+		MobileElement submitno = (MobileElement) driver.findElementByAccessibilityId("login_1");
+		submitno.click();
+		System.out.println("invalid mobile number.");
+		Thread.sleep(12000);
+		
+		
+		MobileElement submitno1 = (MobileElement) driver.findElementByAccessibilityId("login_1");
+		submitno1.click();
+		System.out.println("invalid mobile number.");
+		Thread.sleep(12000);
+		
+		System.out.println("test case pass.");
+		
 		
 
 	}

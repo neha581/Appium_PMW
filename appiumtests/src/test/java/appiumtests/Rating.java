@@ -1,10 +1,8 @@
 package appiumtests;
 
 import java.net.URL;
-
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -23,8 +21,6 @@ public class Rating {
 		System.out.println(e.getMessage());
 			e.printStackTrace();
 		}
-		
-
 	}
 	@Test
 	public static void openPickmywork() throws Exception
@@ -49,11 +45,6 @@ public class Rating {
 	System.out.println("Application started...");
 
 	Thread .sleep(12000);
-	
-	MobileElement language = (MobileElement) driver.findElementByAccessibilityId("intro_1");
-	Thread .sleep(12000);
-	System.out.println("element found for language.");
-	language.click();
 	
 	MobileElement verify_number = (MobileElement) driver.findElementByAccessibilityId("intro_3");
 	Thread.sleep(12000);

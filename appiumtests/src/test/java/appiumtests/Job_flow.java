@@ -1,9 +1,7 @@
 package appiumtests;
 import java.net.URL;
-
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
 import org.apache.log4j.Logger;

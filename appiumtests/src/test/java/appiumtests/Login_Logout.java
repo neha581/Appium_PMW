@@ -92,20 +92,20 @@ public class Login_Logout {
 	Thread.sleep(1200);
 	verify_number.click();
 	System.out.println("button:verify mobile number.");
-	Thread.sleep(1200);
+	Thread.sleep(12000);
 	
-	MobileElement mobileNumber = (MobileElement)driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.EditText");
-	Thread.sleep(1200);   
+	MobileElement mobileNumber = (MobileElement)driver.findElementByAccessibilityId("mobile_field");
+	Thread.sleep(1800);   
 	mobileNumber.sendKeys("8290660528");
 	System.out.println("number entered successfully.");
 	Thread.sleep(1200);
 	MobileElement submit = (MobileElement) driver.findElementByAccessibilityId("login_1");
 	submit.click();
 	System.out.println("number submitted successfully.");
-	Thread.sleep(12000);
+	Thread.sleep(1800);
 	
 	MobileElement submitotp = (MobileElement) driver.findElementByAccessibilityId("login_8");
-	Thread.sleep(1200);
+	Thread.sleep(12000);
 	submitotp.click();
 	System.out.println("otp submitted successfully.");
 	Thread.sleep(12000);

@@ -49,12 +49,7 @@ public class personal_info {
 
 		Thread .sleep(12000);
 		
-		
-		MobileElement English = (MobileElement) driver.findElementByAccessibilityId("intro_1");
-		Thread .sleep(12000);
-		System.out.println("select english as app language.");
-		English.click();
-
+	
 		MobileElement verify_number = (MobileElement) driver.findElementByAccessibilityId("intro_3");
 		Thread.sleep(12000);
 		verify_number.click();
@@ -95,27 +90,27 @@ public class personal_info {
 		email.sendKeys("support@pickmywork.com");
 		System.out.println("email entered successfully.");
 		Thread.sleep(12000); 
-		MobileElement DOB = (MobileElement)driver.findElementByAccessibilityId("ppi_1");
-		Thread.sleep(12000);   
-		DOB.click();
-		System.out.println("select DOB");
-		Thread.sleep(12000); 
-		MobileElement Year = (MobileElement)driver.findElementById("android:id/date_picker_header_year");
-		Thread.sleep(12000);   
-		Year.click();
-		System.out.println("select year");
-		Thread.sleep(12000); 
-		MobileElement select_year = (MobileElement)driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.ScrollView/android.widget.ViewAnimator/android.widget.ListView/android.widget.TextView[1]");
+		//MobileElement DOB = (MobileElement)driver.findElementByAccessibilityId("ppi_1");
+		//Thread.sleep(12000);   
+		//DOB.click();
+		//System.out.println("select DOB");
+		//Thread.sleep(12000); 
+		//MobileElement Year = (MobileElement)driver.findElementById("android:id/date_picker_header_year");
+		//Thread.sleep(12000);   
+		//Year.click();
+		//System.out.println("select year");
+		//Thread.sleep(12000); 
+		//MobileElement select_year = (MobileElement)driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.ViewAnimator/android.widget.ListView/android.widget.TextView[5]");
 		// TODO Auto-generated method stub
-        Thread.sleep(12000);
-        select_year.click();
-        System.out.println("selected the year of birth");
-        Thread.sleep(12000); 
-        MobileElement year_selected = (MobileElement) driver.findElementById("android:id/button1");
-        Thread.sleep(12000);
-        year_selected.click();
-        System.out.println("YearOk");
-        Thread.sleep(12000); 
+        //Thread.sleep(12000);
+       //select_year.click();
+        //System.out.println("selected the year of birth");
+        //Thread.sleep(12000); 
+        //MobileElement year_selected = (MobileElement) driver.findElementById("android:id/button1");
+        //Thread.sleep(12000);
+        //year_selected.click();
+        //System.out.println("YearOk");
+        //Thread.sleep(12000); 
         MobileElement Gender = (MobileElement) driver.findElementByAccessibilityId("ppio_2");
         Thread.sleep(12000);
         Gender.click();
