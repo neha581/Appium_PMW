@@ -43,31 +43,38 @@ public class Training {
 	Log.info("New driver instantiated");
 	System.out.println("Application started...");
 	Thread.sleep(16000);
+	
 	MobileElement verify_number = (MobileElement) driver.findElementByAccessibilityId("intro_3");
 	verify_number.click();
 	System.out.println("verify mobile number.");
-	Thread.sleep(12000);
-	MobileElement mobileNumber = (MobileElement)driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.EditText");  
+	Thread.sleep(4000);
+	
+	MobileElement mobileNumber = (MobileElement)driver.findElementByAccessibilityId("mobile_id");
+	Thread.sleep(1200);
 	mobileNumber.sendKeys("7976890438");
 	System.out.println("number entered successfully.");
+	
 	MobileElement submit = (MobileElement) driver.findElementByAccessibilityId("login_1");
 	submit.click();
 	System.out.println("number submitted successfully.");
 	Thread.sleep(12000);
 	MobileElement submitotp = (MobileElement) driver.findElementByAccessibilityId("login_8");
 	submitotp.click();
+	Thread.sleep(2000);
 	System.out.println("otp submitted successfully.");
-	Thread.sleep(12000);
-	MobileElement jobcard = (MobileElement) driver.findElementByAccessibilityId("jobcard_97");
+	Thread.sleep(20000);
+	
+	MobileElement jobcard = (MobileElement) driver.findElementByAccessibilityId("jobcard_50");
 	Thread.sleep(12000);
 	jobcard.click();
 	Thread.sleep(12000);
 	System.out.println("Jobcard clicked");
-	MobileElement Training = (MobileElement) driver.findElementByAccessibilityId("select_4");
+	Thread.sleep(12000);
+	MobileElement Training = (MobileElement) driver.findElementByAccessibilityId("train_comp");
 	Thread.sleep(12000);
 	Training.click();
 	Thread.sleep(12000);
-	System.out.println("Training complete.");
+	System.out.println("Training complete and start task button clicked.");
 	}
 	
 

@@ -71,13 +71,13 @@ public class Job_Apply {
 	jobcard.click();
 	Thread.sleep(2000);
 	System.out.println("Jobcard clicked");
-	
+	Thread.sleep(8000);
 	MobileElement apply = (MobileElement) driver.findElementByAccessibilityId("apply_4");
-	Thread.sleep(2000);
+	Thread.sleep(8000);
 	apply.click();
 	Thread.sleep(2000);
 	System.out.println("applied.");
-	
+	Thread.sleep(12000);
 	MobileElement slotbook = (MobileElement) driver.findElementByAccessibilityId("book_1");
 	Thread.sleep(2000);
 	slotbook.click();
@@ -87,49 +87,6 @@ public class Job_Apply {
 	Thread.sleep(12000);
 	slotbooked.click();
 	System.out.println("slot booked");
-	
-	// After selection//
-	
-	MobileElement home = (MobileElement) driver.findElementByAccessibilityId("nav_1");
-	Thread.sleep(12000);
-	home.click();
-	System.out.println("home");
-	
-	MobileElement jobcard1 = (MobileElement) driver.findElementByAccessibilityId("jobcard_50");
-	Thread.sleep(12000);
-	jobcard1.click();
-	Thread.sleep(12000);
-	System.out.println("Jobcard clicked");
-	
-	MobileElement preview = (MobileElement) driver.findElementByAccessibilityId("select_4");
-	Thread.sleep(12000);
-	preview.click();
-	Thread.sleep(12000);
-	System.out.println("work order preview.");
-	
-	MobileElement accept_offer = (MobileElement) driver.findElementByAccessibilityId("select_3");
-	Thread.sleep(12000);
-	accept_offer.click();
-	Thread.sleep(12000);
-	System.out.println("accept offer.");
-	
-	MobileElement sign = (MobileElement) driver.findElementByAccessibilityId("sign_2");
-	Thread.sleep(12000);
-	sign.click();
-	Thread.sleep(12000);
-	System.out.println("sign work order.");
-	
-	MobileElement preview1 = (MobileElement) driver.findElementByAccessibilityId("select_4");
-	Thread.sleep(12000);
-	preview1.click();
-	Thread.sleep(12000);
-	System.out.println("work order preview after sign.");
-	
-	MobileElement proceed = (MobileElement) driver.findElementByAccessibilityId("select_2");
-	Thread.sleep(12000);
-	proceed.click();
-	Thread.sleep(12000);
-	System.out.println("proceed to task.");
 	
 	}
 	}
