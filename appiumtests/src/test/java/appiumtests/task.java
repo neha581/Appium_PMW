@@ -48,21 +48,13 @@ public class task {
 		System.out.println("application started");
 		Thread.sleep(12000);
 		
-		MobileElement language = (MobileElement) driver.findElementByAccessibilityId("choose_language");
-		System.out.println("element found for language.");
-		language.click();
-		Thread.sleep(12000);
-		MobileElement English = (MobileElement) driver.findElementByAccessibilityId("lang_1");
-		English.click();
-		System.out.println("Selected English as app language");
-		Thread.sleep(12000);
 		MobileElement verify_number = (MobileElement) driver.findElementByAccessibilityId("intro_3");
 		verify_number.click();
-		
 		System.out.println("verify mobile number.");
 		Thread.sleep(12000);
-		MobileElement mobileNumber = (MobileElement)driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.EditText");  
-		mobileNumber.sendKeys("8290660528");
+		
+		MobileElement mobileNumber = (MobileElement)driver.findElementByAccessibilityId("mobile_id");  
+		mobileNumber.sendKeys("7976890438");
 		System.out.println("number entered successfully.");
 		MobileElement submit = (MobileElement) driver.findElementByAccessibilityId("login_1");
 		submit.click();
@@ -72,59 +64,34 @@ public class task {
 		submitotp.click();
 		System.out.println("otp submitted successfully.");
 		Thread.sleep(12000);
-		MobileElement jobcard = (MobileElement) driver.findElementByAccessibilityId("jobcard_10");
+		MobileElement jobcard = (MobileElement) driver.findElementByAccessibilityId("jobcard_54");
 		Thread.sleep(12000);
 		jobcard.click();
 		Thread.sleep(12000);
 		System.out.println("Jobcard clicked");
-		MobileElement ID_Card = (MobileElement) driver.findElementByAccessibilityId("");
-		Thread.sleep(1200);
-		ID_Card.click();
-		Thread.sleep(1200);
-		System.out.println("open id card page.");
-		MobileElement goBackToTask = (MobileElement) driver.findElementByAccessibilityId("");
-	    goBackToTask.click();
+		
+		MobileElement begin_task = (MobileElement) driver.findElementByAccessibilityId("begin_task_1");
+		Thread.sleep(12000);
+		begin_task.click();
+		Thread.sleep(12000);
+		System.out.println("begin task clicked");
+
+	    MobileElement mobile = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[1]");
+	    mobile.sendKeys("8290660528");
 	    Thread.sleep(1200);
-	    System.out.println("back to task page");
-	    MobileElement setTarget = (MobileElement) driver.findElementByAccessibilityId("");
-	    setTarget.click();
+	    System.out.println("mobile no entered.");
+	    
+		MobileElement name = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[2]");
+	    name.sendKeys("test merchant");
 	    Thread.sleep(1200);
-	    System.out.println("we are on set weekly target page");
-	    //Set Target Page
+	    System.out.println("merchant name entered.");
 	    
-	    //work order
-	    
-	    //Training Video
-	    
-	    
-	    
-	    MobileElement BeginTask = (MobileElement) driver.findElementsByAccessibilityId("");
-	    BeginTask.click();
+	    MobileElement submit_task = (MobileElement) driver.findElementByAccessibilityId("submit_task");
+	    submit_task.click();
 	    Thread.sleep(1200);
-	    System.out.println("we are on task page");
+	    System.out.println("merchant name entered.");
 	    
-	    MobileElement MerchantMobile = (MobileElement) driver.findElementsByAccessibilityId("");
-	    MerchantMobile.sendKeys("7976890438");
-	    Thread.sleep(1200);
-	    System.out.println("mobile number of merchant");
 	    
-	    MobileElement MerchantName = (MobileElement) driver.findElementsByAccessibilityId("");
-	    MerchantName.sendKeys("Test Merchant");
-	    Thread.sleep(1200);
-	    System.out.println("name of merchant");
-	    
-	    MobileElement MerchantPincode = (MobileElement) driver.findElementsByAccessibilityId("");
-	    MerchantPincode.sendKeys("324005");
-	    Thread.sleep(1200);
-	    System.out.println("pincode of merchant");
-	    
-	    MobileElement SaveDetail = (MobileElement) driver.findElementsByAccessibilityId("");
-	    SaveDetail.click();
-	    Thread.sleep(1200);
-	    System.out.println("merchant details saved.");
-	    
-	  //Current status tab
-	     
 	
 	}
 

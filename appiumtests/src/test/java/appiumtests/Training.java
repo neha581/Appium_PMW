@@ -69,7 +69,7 @@ public class Training {
 	jobcard.click();
 	Thread.sleep(12000);
 	System.out.println("Jobcard clicked");
-	Thread.sleep(12000);
+	Thread.sleep(120000);
 	MobileElement Training = (MobileElement) driver.findElementByAccessibilityId("train_comp");
 	Thread.sleep(12000);
 	Training.click();

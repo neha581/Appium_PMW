@@ -1,7 +1,9 @@
 package appiumtests;
 import java.net.URL;
+
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -42,19 +44,16 @@ import org.testng.annotations.Test;
 		Log.info("New driver instantiated");
 		System.out.println("Application started...");
         Thread .sleep(12000);
-        MobileElement English = (MobileElement) driver.findElementByAccessibilityId("intro_1");
-		Thread .sleep(12000);
-		System.out.println("select english as app language.");
-		English.click();
+        
 
 		MobileElement verify_number = (MobileElement) driver.findElementByAccessibilityId("intro_3");
 		Thread.sleep(12000);
 		verify_number.click();
 		System.out.println("verify mobile number.");
 		Thread.sleep(12000);
-		MobileElement mobileNumber = (MobileElement)driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.EditText");
-		Thread.sleep(12000);   
-		mobileNumber.sendKeys("8290660528");
+		MobileElement mobileNumber = (MobileElement)driver.findElementByAccessibilityId("mobile_id");
+		Thread.sleep(1200);
+		mobileNumber.sendKeys("7976890438");
 		System.out.println("number entered successfully.");
 
 		MobileElement submit = (MobileElement) driver.findElementByAccessibilityId("login_1");

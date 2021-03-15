@@ -68,7 +68,7 @@ public class Reset_interviewSlot {
 	Thread.sleep(2000);
 	System.out.println("otp submitted successfully.");
 	Thread.sleep(20000);
-	MobileElement jobcard = (MobileElement) driver.findElementByAccessibilityId("jobcard_15");
+	MobileElement jobcard = (MobileElement) driver.findElementByAccessibilityId("jobcard_50");
 	Thread.sleep(2000);
 	jobcard.click();
 	Thread.sleep(2000);

@@ -1,8 +1,11 @@
 package appiumtests;
 import java.net.URL;
+
 import org.openqa.selenium.remote.DesiredCapabilities;
+
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.testng.annotations.Test;
@@ -45,20 +48,15 @@ public class bankaccount {
 		driver = new AppiumDriver<MobileElement>(url, cap);
 		Log.info("New driver instantiated");
 		System.out.println("Application started...");
-
 		Thread .sleep(12000);
-		MobileElement language = (MobileElement) driver.findElementByAccessibilityId("intro_1");
-		Thread .sleep(12000);
-		System.out.println("element found for language.");
-		language.click();
 		MobileElement verify_number = (MobileElement) driver.findElementByAccessibilityId("intro_3");
 		Thread.sleep(12000);
 		verify_number.click();
 		System.out.println("verify mobile number.");
 		Thread.sleep(12000);
-		MobileElement mobileNumber = (MobileElement)driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.EditText");
+		MobileElement mobileNumber = (MobileElement)driver.findElementByAccessibilityId("mobile_id");
 		Thread.sleep(12000);   
-		mobileNumber.sendKeys("8290660528");
+		mobileNumber.sendKeys("7976890438");
 		System.out.println("number entered successfully.");
 		MobileElement submit = (MobileElement) driver.findElementByAccessibilityId("login_1");
 		submit.click();
@@ -69,12 +67,12 @@ public class bankaccount {
 		submitotp.click();
 		System.out.println("otp submitted successfully.");
 		
-		Thread.sleep(12000);
+		Thread.sleep(24000);
 		
 		MobileElement bank_account = (MobileElement) driver.findElementByAccessibilityId("homenav_1");
 		Thread.sleep(12000);
 		bank_account.click();
-		System.out.println("bank_account");
+		System.out.println("wallet button clicked.");
 		Thread.sleep(12000);
 		MobileElement addaccount = (MobileElement) driver.findElementByAccessibilityId("wallet_1");
 		Thread.sleep(12000);
@@ -82,34 +80,65 @@ public class bankaccount {
 		System.out.println("add account");
 		Thread.sleep(12000);
 		
-		MobileElement ifsc = (MobileElement)driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText");
+		MobileElement ifsc = (MobileElement)driver.findElementByAccessibilityId("ifsc_field");
 		Thread.sleep(12000);   
-		ifsc.sendKeys("icic0000184");
+		ifsc.sendKeys("icic000018");
+		System.out.println("ifsc entered successfully.");
+		
+		MobileElement save = (MobileElement)driver.findElementByAccessibilityId("nav_2");
+		Thread.sleep(12000);   
+		save.click();
+		System.out.println("save button clicked.");
+		System.out.println("Error : incorrect ifsc code/ no bank detail found");
+		
+		MobileElement ifsc1 = (MobileElement)driver.findElementByAccessibilityId("ifsc_field");
+		Thread.sleep(12000);   
+		ifsc1.sendKeys("icic0000184");
 		System.out.println("ifsc entered successfully.");
 		
 		Thread.sleep(12000);
 		
-		MobileElement accountno = (MobileElement)driver.findElementByXPath("hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[4]");
+		MobileElement accountno1 = (MobileElement)driver.findElementByAccessibilityId("nav_2");
 		Thread.sleep(12000);   
-		accountno.sendKeys("123");
-		System.out.println("ifsc entered successfully.");
+		accountno1.click();
+		System.out.println("save button clicked.");
+		System.out.println("Error : missing mand paran account no."); 
 		
-		MobileElement confirm_accountno = (MobileElement)driver.findElementByXPath("hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText");
+		MobileElement accountno2 = (MobileElement)driver.findElementByAccessibilityId("account_field");
 		Thread.sleep(12000);   
-		confirm_accountno.sendKeys("123");
-		System.out.println("account no confirmed");
+		accountno2.sendKeys("123");
+		System.out.println("account no entered");
 		
-		MobileElement accountHolderName = (MobileElement)driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[5]");
+		
+		MobileElement confirm_accountno = (MobileElement)driver.findElementByAccessibilityId("account2_field");
 		Thread.sleep(12000);   
-		accountHolderName.sendKeys("neha");
-		System.out.println("account holder name.");
+		confirm_accountno.sendKeys("neha");
+		System.out.println("verify account no");
 		
 		MobileElement save_account = (MobileElement)driver.findElementByAccessibilityId("nav_2");
 		Thread.sleep(12000);   
 		save_account.click();
 		System.out.println("account details saved.");
+		System.out.println("Error : account no is not same");
 		Thread.sleep(1200);
+		
+		MobileElement accountno4 = (MobileElement)driver.findElementByAccessibilityId("account_field");
+		Thread.sleep(12000);   
+		accountno4.sendKeys("123ab");
+		System.out.println("account no entered");
+		
+		
+		MobileElement confirm_accountno5 = (MobileElement)driver.findElementByAccessibilityId("account2_field");
+		Thread.sleep(12000);   
+		confirm_accountno5.sendKeys("123ab");
+		System.out.println("verify account no");
 		// TODO Auto-generated method stub
+		
+		MobileElement save_account1 = (MobileElement)driver.findElementByAccessibilityId("nav_2");
+		Thread.sleep(12000);   
+		save_account1.click();
+		System.out.println("account details saved.");
+		System.out.println("account details saved.");
 
 	}
 

@@ -57,7 +57,7 @@ public class DetailsBeforeApply {
 	
 	MobileElement mobileNumber = (MobileElement)driver.findElementByAccessibilityId("mobile_id");
 	Thread.sleep(1200);
-	mobileNumber.sendKeys("7976890438");
+	mobileNumber.sendKeys("7595919026");
 	System.out.println("number entered successfully.");
 	
 	MobileElement submit = (MobileElement) driver.findElementByAccessibilityId("login_1");
@@ -69,7 +69,7 @@ public class DetailsBeforeApply {
 	Thread.sleep(2000);
 	System.out.println("otp submitted successfully.");
 	Thread.sleep(20000);
-	MobileElement jobcard = (MobileElement) driver.findElementByAccessibilityId("jobcard_15");
+	MobileElement jobcard = (MobileElement) driver.findElementByAccessibilityId("jobcard_50");
 	Thread.sleep(2000);
 	jobcard.click();
 	Thread.sleep(2000);

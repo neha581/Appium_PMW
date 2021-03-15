@@ -57,7 +57,7 @@ public class AcceptOffer {
 	
 	MobileElement mobileNumber = (MobileElement)driver.findElementByAccessibilityId("mobile_id");
 	Thread.sleep(1200);
-	mobileNumber.sendKeys("7976890438");
+	mobileNumber.sendKeys("8290660528");
 	System.out.println("number entered successfully.");
 	
 	MobileElement submit = (MobileElement) driver.findElementByAccessibilityId("login_1");
@@ -70,7 +70,7 @@ public class AcceptOffer {
 	System.out.println("otp submitted successfully.");
 	Thread.sleep(20000);
 	
-	MobileElement jobcard1 = (MobileElement) driver.findElementByAccessibilityId("jobcard_50");
+	MobileElement jobcard1 = (MobileElement) driver.findElementByAccessibilityId("jobcard_45");
 	Thread.sleep(12000);
 	jobcard1.click();
 	Thread.sleep(12000);
@@ -81,6 +81,13 @@ public class AcceptOffer {
 	preview.click();
 	Thread.sleep(12000);
 	System.out.println("work order preview.");
+	
+	MobileElement back = (MobileElement) driver.findElementByAccessibilityId("nav_1");
+	Thread.sleep(12000);
+	back.click();
+	Thread.sleep(12000);
+	System.out.println("back");
+	
 	
 	MobileElement accept_offer = (MobileElement) driver.findElementByAccessibilityId("select_3");
 	Thread.sleep(12000);
@@ -99,6 +106,12 @@ public class AcceptOffer {
 	preview1.click();
 	Thread.sleep(12000);
 	System.out.println("work order preview after sign.");
+	
+	MobileElement back1 = (MobileElement) driver.findElementByAccessibilityId("nav_1");
+	Thread.sleep(12000);
+	back1.click();
+	Thread.sleep(12000);
+	System.out.println("back");
 	
 	MobileElement proceed = (MobileElement) driver.findElementByAccessibilityId("select_2");
 	Thread.sleep(12000);

@@ -94,7 +94,7 @@ public class Login_Logout {
 	System.out.println("button:verify mobile number.");
 	Thread.sleep(12000);
 	
-	MobileElement mobileNumber = (MobileElement)driver.findElementByAccessibilityId("mobile_field");
+	MobileElement mobileNumber = (MobileElement)driver.findElementByAccessibilityId("mobile_id");
 	Thread.sleep(1800);   
 	mobileNumber.sendKeys("8290660528");
 	System.out.println("number entered successfully.");
@@ -102,7 +102,7 @@ public class Login_Logout {
 	MobileElement submit = (MobileElement) driver.findElementByAccessibilityId("login_1");
 	submit.click();
 	System.out.println("number submitted successfully.");
-	Thread.sleep(1800);
+	Thread.sleep(18000);
 	
 	MobileElement submitotp = (MobileElement) driver.findElementByAccessibilityId("login_8");
 	Thread.sleep(12000);

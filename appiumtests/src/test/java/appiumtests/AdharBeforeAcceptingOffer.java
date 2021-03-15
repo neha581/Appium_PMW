@@ -69,7 +69,7 @@ public class AdharBeforeAcceptingOffer {
 	System.out.println("otp submitted successfully.");
 	Thread.sleep(20000);
 	
-	MobileElement jobcard1 = (MobileElement) driver.findElementByAccessibilityId("jobcard_15");
+	MobileElement jobcard1 = (MobileElement) driver.findElementByAccessibilityId("jobcard_50");
 	Thread.sleep(12000);
 	jobcard1.click();
 	Thread.sleep(12000);
